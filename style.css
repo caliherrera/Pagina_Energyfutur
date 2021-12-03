@@ -1,0 +1,197 @@
+:root{
+    /*Colores*/
+    --turquesa:#00aec7;
+    --azul:#00263a;
+    --azul-intenso:#001b26;
+    --blanco:#FFFFFF;
+}
+@font-face {
+    font-family: Futura;
+    src: url(./fonts/futura/Futura\ Heavy\ font.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+}
+header{
+    width: 100%;
+    height: 70px;
+    min-width: 320px;
+    background-color: var(--azul); 
+}
+header nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header nav .nav__right{
+    list-style: none;
+    display: flex;
+    margin-left: 30px;
+}
+nav .nav__right a{
+    color: var(--blanco);
+    margin-right: 40px;
+    font-size:1.6rem;
+}
+nav .logo{
+    justify-content: right;
+    display: flex;
+    height:  60px;  
+}
+nav .logo img{
+    margin-top: 2.9px;
+    width: 135px;;
+    margin-right: 30px;
+}
+main{
+    width: 100%;
+    height: auto;
+    min-width: 320px;
+}
+main .main__principal{
+    width: 100%;
+    height:89.99vh;
+    background-image: url(./assets/imagenes/Panel_solar.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+}
+main .main__principal__title{
+    width: 60%;
+    padding-top: 12%;
+}
+main .main__principal__title h1{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--blanco);
+    margin-left: 30px; 
+    font-size: 5rem;
+}
+main .main__principal__title b{
+    font-family:Futura;
+    font-size: 10rem;
+}
+main .main__principal__foco{
+    background-image: url(./assets/imagenes/foco1.png);
+    width:250px;
+    height:auto;
+    background-repeat: no-repeat;
+    background-position:right;
+    background-size: cover;
+}
+.main__secundario{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--azul-intenso);
+}
+.main__secundario__title1{
+    font-family: Futura;
+    color: var(--blanco);
+    font-size: 1.8rem;
+    text-align: center;
+}
+.main--secundario--title2{
+    font-family: Futura;
+    color: var(--blanco);
+    font-size: 1.8rem;
+    text-align: center;
+}
+.main--secundario--title2 span{
+    display: inline-block;
+    background-image: url(./assets/imagenes/logos\ energy.svg);
+    width: 150px;
+    height:50px;
+    background-size: cover;
+}
+
+.main__secundario figure{
+    display: flex;
+}
+.main__secundario img{
+    width: 6%;
+    margin-top: 20px;
+}
+.main__secundario__servicios{
+    display: flex;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+}
+.main__servicios__ongrid{
+    width: 20%;
+    height: 90%;
+    background-image: url(./assets/imagenes/cafe_solar.png);
+    background-size: cover;
+    margin-right: 20px;
+    display:inline-block;
+}
+.main__servicios__plantasolar{
+    width: 20%;
+    height: 90%;
+    background-image: url(./assets/imagenes/planta_solar.png);
+    background-size: cover;
+    margin-right: 20px;
+
+}
+.main__servicios__offgrid{
+    width: 20%;
+    height: 90%;
+    background-image: url(./assets/imagenes/sistema_ongridd.png);
+    background-size: cover;
+}
+.main__servicios__title2{
+    padding:20% 0 10% 10%;
+    height: 20%;
+}
+.main__servicios__title1{
+    height: 60%;
+
+}
+ .main__servicios__buttons{
+    height: 20%;
+}
+.main__secundario__servicios .line{
+    background-image: url(./assets/icons/linea.png);
+    height: 5px;
+    margin: 0 35%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main__servicios__title2 h4{
+    color: var(--blanco);
+    font-size: 1.4rem;
+}
+.main__secundario__servicios h3{
+    font-size: 1.8rem;
+    color: var(--blanco);
+    text-align: center;
+}
+.main__secundario__servicios .negrita{
+    font-size: 2.3rem;
+    color: var(--blanco);
+    font-weight:900;
+}
+
+.main__servicios__buttons button{
+    margin: 10% 0 10% 10%;
+    border-radius: 3px;
+    border:1px solid var(--blanco);
+    width: 80%;
+    background-color: transparent;
+    font-size:1.2rem;
+    color:var(--blanco);
+    padding: 5px 15px;
+}
